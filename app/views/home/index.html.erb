@@ -62,9 +62,9 @@
                     <li>
                         <a class="page-scroll" href="#about">ABOUT</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#recruit">RECRUIT</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#faq">FAQ</a>
                     </li>
@@ -81,8 +81,10 @@
 <script>
 $(function(){
         $("#typed").typed({
-            strings: ["LIKELION","DONGDUK WOMENS UNIVERSITY","LIKELION X DWU"],
-            typeSpeed: 80
+            strings: ["LIKELION X DWU","5기 합격자 발표","고희경 6722","구유림 9479","국보라 6408","김나영 8544",
+            "김혜연 9633","노유정 1776","신우영 9244","이가은 4237","이가현 3478","이림아 4028","장윤미 0915","주빛나 7424","진혜인 9685",
+            "최지수 1170","허은실 8286", "Thank you for your applying."],
+            typeSpeed: 150
         });
     });
 </script>
@@ -95,7 +97,7 @@ $(function(){
                     <span id="typed" style="white-space:pre;"></span>
                 </div>
                 <div class="intro-heading">HACK YOUR LIFE</div>
-                <a href="#portfolioModal1" class="portfolio-link btn btn-xl" data-toggle="modal">합격자 보기</a>
+                <a href="#portfolioModal1" class="portfolio-link btn btn-xl" data-toggle="modal">최종 합격자 발표</a>
                 
                 <!--<a href="#recruit" class="page-scroll btn btn-xl">지원하기</a>-->
             </div>
@@ -146,7 +148,7 @@ $(function(){
         </div>
     </section>
 
-    <!-- Recruit Section -->
+    <!-- Recruit Section
     <section id="recruit" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -230,18 +232,17 @@ $(function(){
         <!--        <a href="http://jasoseol.com/" class="page-scroll btn btn-default" target="_blank">자소설 닷컴 바로가기</a>-->
         <!--    </div>-->
         <!--</div>-->
-    </section>
+   <!--</section> -->
     
     <!-- FAQ Section -->
-    <section id="faq">
+    <section id="faq" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">FAQ</h2>
                     <h3 class="section-subheading text-muted">
                     더 궁금하신 점이 있으시다면<br>
-                    <a href="http://www.facebook.com/dongduklion" target="_blank">멋쟁이사자처럼 at 동덕여대</a> 페이지나
-                    대표 번호(010-2632-0104)로 연락주시기 바랍니다.</h3>
+                    <a href="http://www.facebook.com/dongduklion" target="_blank">멋쟁이사자처럼 at 동덕여대</a> 페이지로 연락주시기 바랍니다.</h3>
                 </div>
             </div>
             <div class="row">
@@ -356,7 +357,7 @@ $(function(){
 
     
     <!-- Team Section -->
-    <section id="member" class="bg-light-gray">
+    <section id="member">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -528,7 +529,7 @@ $(function () {
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a data-toggle="tooltip" data-placement="top" title="대표 연락처 : 010-2632-0104"><i class="fa fa-phone-square" ></i></a>
+                        <li><a data-toggle="tooltip" data-placement="top" title="→ CLICK"><i class="fa fa-phone-square" ></i></a>
                         </li>
                         <li><a href="http://www.facebook.com/dongduklion" target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
@@ -567,7 +568,7 @@ $(function () {
                     <div class="row">
                         <div>
                             <div class="modal-body">
-                                <img class="img-responsive img-centered" src="<%= image_path 'infomation.jpg' %>" width="100%" alt="">
+                                <img class="img-responsive img-centered" src="<%= image_path 'announcement-web.jpg' %>" width="100%" alt="">
                                 <!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>-->
                             </div>
                         </div>
